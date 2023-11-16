@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Online Shopping</h1>
+</header>
+
+<!-- Login Section -->
+<section id="login" class="visible">
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="return login()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+    </form>
+</section>
+
+<!-- Main Content Section -->
+<section id="mainContent" class="hidden">
+    <!-- Search Section -->
+    <section id="search">
+        <h2>Search for Items</h2>
+        <input type="text" id="searchInput" placeholder="Enter item name">
+        <button onclick="search()">Search</button>
+    </section>
+
+    <!-- Product Listing Section -->
+    <section id="productList" class="hidden">
+        <h2>Available Items</h2>
+        <!-- Display search results here -->
+        <div class="product">
+            <p>Item Name</p>
+            <p>Price: $XX</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="viewItemDetails()">View Details</button>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Section -->
+    <section id="shoppingCart" class="hidden">
+        <h2>Shopping Cart</h2>
+        <!-- Display items in the shopping cart here -->
+        <div class="cartItem">
+            <p>Item Name</p>
+            <p>Quantity: 1</p>
+            <button onclick="editCartItem()">Edit</button>
+            <button onclick="removeCartItem()">Remove</button>
+        </div>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <!-- Order Status Section -->
+    <section id="orderStatus" class="hidden">
+        <h2>Order Status</h2>
+        <!-- Display order status information here -->
+    </section>
+
+    <!-- Order History Section -->
+    <section id="orderHistory" class="hidden">
+        <h2>Order History</h2>
+        <!-- Display order history information here -->
+    </section>
+
+</section>
+
+<!-- Logout Section -->
+<section id="logout" class="hidden">
+    <button onclick="logout()">Logout</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
