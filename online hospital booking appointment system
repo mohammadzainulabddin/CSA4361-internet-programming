@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Search</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Search Hospitals/Doctors</h2>
+        <form action="/search" method="GET">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <label for="specialty">Specialty:</label>
+            <input type="text" id="specialty" name="specialty">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    <!-- Display search results here -->
+    <section id="search-results">
+        <!-- Results will be dynamically populated using JavaScript -->
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Book Appointment</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Book an Appointment</h2>
+        <!-- Form for booking appointments -->
+        <form action="/book-appointment" method="POST">
+            <!-- Include relevant form fields here (e.g., date and time picker) -->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Check-in</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Check-in Form</h2>
+        <!-- Form for submitting check-in information -->
+        <form action="/check-in" method="POST">
+            <!-- Include relevant form fields here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <button type="submit">Submit Check-in</button>
+        </form>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Appointment Management</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Appointment Management</h2>
+        <!-- Display upcoming appointments and allow users to manage them -->
+        <ul>
+            <!-- List upcoming appointments dynamically using JavaScript -->
+            <li>Appointment 1 - Date and Time</li>
+            <li>Appointment 2 - Date and Time</li>
+            <!-- ... -->
+        </ul>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Schedule Timing</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Schedule a Timing</h2>
+        <!-- Form for scheduling available timings -->
+        <form action="/schedule-timing" method="POST">
+            <!-- Include relevant form fields here -->
+            <label for="day">Day:</label>
+            <input type="text" id="day" name="day" required>
+            <label for="timing">Timing:</label>
+            <input type="text" id="timing" name="timing" required>
+            <button type="submit">Schedule Timing</button>
+        </form>
+    </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Past Appointments</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Past Appointments</h2>
+        <!-- Display past appointments and related information -->
+        <ul>
+            <!-- List past appointments dynamically using JavaScript -->
+            <li>Past Appointment 1 - Date and Time</li>
+            <li>Past Appointment 2 - Date and Time</li>
+            <!-- ... -->
+        </ul>
+    </section>
+</body>
+</html>
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Manage Appointments</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Manage Appointments</h2>
+        <!-- Display a list of appointments with options to manage them -->
+        <ul>
+            <!-- List appointments dynamically using JavaScript -->
+            <li>
+                <span>Appointment Date and Time</span>
+                <button onclick="cancelAppointment('appointmentId')">Cancel</button>
+            </li>
+            <!-- ... -->
+        </ul>
+    </section>
+
+    <script>
+        // Add JavaScript functions for dynamic functionality
+        function cancelAppointment(appointmentId) {
+            // Implement cancellation logic here
+            console.log(`Appointment ${appointmentId} canceled.`);
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Manage Doctors</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Manage Doctors</h2>
+        <!-- Display a list of doctors with options to manage them -->
+        <ul>
+            <!-- List doctors dynamically using JavaScript -->
+            <li>
+                <span>Doctor Name</span>
+                <button onclick="editDoctor('doctorId')">Edit</button>
+                <button onclick="deleteDoctor('doctorId')">Delete</button>
+            </li>
+            <!-- ... -->
+        </ul>
+    </section>
+
+    <script>
+        // Add JavaScript functions for dynamic functionality
+        function editDoctor(doctorId) {
+            // Implement edit logic here
+            console.log(`Editing details of Doctor ${doctorId}.`);
+        }
+
+        function deleteDoctor(doctorId) {
+            // Implement delete logic here
+            console.log(`Deleting Doctor ${doctorId}.`);
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Appointments Statistics</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Appointments Statistics</h2>
+        <!-- Display statistics related to appointments -->
+        <p>Total Appointments: <span id="totalAppointments">100</span></p>
+        <p>Completed Appointments: <span id="completedAppointments">80</span></p>
+        <p>Upcoming Appointments: <span id="upcomingAppointments">20</span></p>
+    </section>
+
+    <script>
+        // Fetch and update statistics using JavaScript or fetch data from the server
+        document.getElementById('totalAppointments').innerText = getTotalAppointments();
+        document.getElementById('completedAppointments').innerText = getCompletedAppointments();
+        document.getElementById('upcomingAppointments').innerText = getUpcomingAppointments();
+
+        // Add functions to fetch data from the server or update statistics dynamically
+        function getTotalAppointments() {
+            // Implement logic to get total appointments
+            return 100;
+        }
+
+        function getCompletedAppointments() {
+            // Implement logic to get completed appointments
+            return 80;
+        }
+
+        function getUpcomingAppointments() {
+            // Implement logic to get upcoming appointments
+            return 20;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Rating Details</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Rating Details</h2>
+        <!-- Display details about ratings -->
+        <ul>
+            <!-- List ratings dynamically using JavaScript -->
+            <li>
+                <span>Doctor: Doctor Name</span>
+                <span>Rating: 4.5</span>
+                <span>Comments: Excellent service!</span>
+            </li>
+            <!-- ... -->
+        </ul>
+    </section>
+
+    <script>
+        // Add JavaScript functions for dynamic functionality
+        // Fetch and update ratings from the server or fetch data dynamically
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fetch and update ratings dynamically
+            fetchRatings();
+        });
+
+        function fetchRatings() {
+            // Implement logic to fetch ratings from the server or other data source
+            const ratingsData = [
+                { doctor: 'Doctor Name', rating: 4.5, comments: 'Excellent service!' },
+                // ... add more ratings
+            ];
+
+            // Display ratings in the HTML
+            const ratingsList = document.querySelector('ul');
+            ratingsData.forEach(rating => {
+                const li = document.createElement('li');
+                li.innerHTML = `<span>Doctor: ${rating.doctor}</span><span>Rating: ${rating.rating}</span><span>Comments: ${rating.comments}</span>`;
+                ratingsList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Signup/Login</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Signup</h2>
+        <!-- Signup form -->
+        <form action="/signup" method="POST">
+            <!-- Include relevant form fields for signup -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Signup</button>
+        </form>
+
+        <h2>Login</h2>
+        <!-- Login form -->
+        <form action="/login" method="POST">
+            <!-- Include relevant form fields for login -->
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Book Appointment</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Book an Appointment</h2>
+        <!-- Form for booking appointments -->
+        <form action="/book-appointment" method="POST">
+            <!-- Include relevant form fields here (e.g., date and time picker) -->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Doctor Search and Reviews</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Doctor Search</h2>
+        <!-- Form for searching doctors -->
+        <form action="/search-doctors" method="GET">
+            <!-- Include relevant form fields for doctor search -->
+            <label for="specialty">Specialty:</label>
+            <input type="text" id="specialty" name="specialty">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location">
+            <button type="submit">Search Doctors</button>
+        </form>
+
+        <h2>Doctor Reviews</h2>
+        <!-- Display reviews and feedback about doctors -->
+        <ul>
+            <!-- List reviews dynamically using JavaScript -->
+            <li>
+                <span>Doctor: Doctor Name</span>
+                <span>Rating: 4.5</span>
+                <p>User Feedback: Excellent service!</p>
+            </li>
+            <!-- ... -->
+        </ul>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Check-in Details and Medical History</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Check-in Details</h2>
+        <!-- Display details about the user's check-ins -->
+        <ul>
+            <!-- List check-in details dynamically using JavaScript -->
+            <li>
+                <span>Date and Time: Check-in Date and Time</span>
+                <span>Doctor: Doctor Name</span>
+            </li>
+            <!-- ... -->
+        </ul>
+
+        <h2>Medical History</h2>
+        <!-- Display the user's medical history -->
+        <ul>
+            <!-- List medical history dynamically using JavaScript -->
+            <li>
+                <span>Date: Medical Appointment Date</span>
+                <span>Doctor: Doctor Name</span>
+                <p>Medical Details: Medical details go here...</p>
+            </li>
+            <!-- ... -->
+        </ul>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - User Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>User Registration</h2>
+        <!-- User registration form -->
+        <form action="/user-registration" method="POST">
+            <!-- Include relevant form fields for user registration -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - User Login</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>User Login</h2>
+        <!-- User login form -->
+        <form action="/user-login" method="POST">
+            <!-- Include relevant form fields for user login -->
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Search Location Wise</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Search Location Wise</h2>
+        <!-- Form for searching hospitals by location -->
+        <form action="/search-location-wise" method="GET">
+            <!-- Include relevant form fields for location search -->
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <button type="submit">Search Hospitals</button>
+        </form>
+        <!-- Display search results here -->
+        <div id="search-results">
+            <!-- Results will be dynamically populated using JavaScript -->
+        </div>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - View Hospital List</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>View Hospital List</h2>
+        <!-- Display a list of hospitals -->
+        <ul>
+            <!-- List hospitals dynamically using JavaScript -->
+            <li>
+                <span>Hospital Name</span>
+                <span>Location: Hospital Location</span>
+                <button onclick="bookAppointment('hospitalId')">Book Appointment</button>
+            </li>
+            <!-- ... -->
+        </ul>
+    </section>
+
+    <script>
+        // Add JavaScript functions for dynamic functionality
+        function bookAppointment(hospitalId) {
+            // Implement booking logic here
+            console.log(`Booking appointment at Hospital ${hospitalId}.`);
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Book Appointment</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Book an Appointment</h2>
+        <!-- Form for booking appointments -->
+        <form action="/book-appointment" method="POST">
+            <!-- Include relevant form fields here (e.g., date and time picker) -->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - View Status</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>View Appointment Status</h2>
+        <!-- Display the user's appointment status -->
+        <ul>
+            <!-- List appointment status dynamically using JavaScript -->
+            <li>
+                <span>Appointment Date and Time</span>
+                <span>Status: Confirmed</span>
+            </li>
+            <!-- ... -->
+        </ul>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - View Google Map</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>View Google Map for Single Hospital</h2>
+        <!-- Display Google Map for a single hospital -->
+        <div id="google-map">
+            <!-- Google Map will be embedded here using JavaScript -->
+        </div>
+    </section>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Hospital Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Hospital Registration</h2>
+        <!-- Hospital registration form -->
+        <form action="/hospital-registration" method="POST">
+            <!-- Include relevant form fields for hospital registration -->
+            <label for="hospitalName">Hospital Name:</label>
+            <input type="text" id="hospitalName" name="hospitalName" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Hospital Login</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Hospital Login</h2>
+        <!-- Hospital login form -->
+        <form action="/hospital-login" method="POST">
+            <!-- Include relevant form fields for hospital login -->
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Create Hospital Details</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Create Hospital Details</h2>
+        <!-- Form for creating and updating hospital details -->
+        <form action="/create-hospital-details" method="POST">
+            <!-- Include relevant form fields for hospital details -->
+            <label for="hospitalName">Hospital Name:</label>
+            <input type="text" id="hospitalName" name="hospitalName" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            <button type="submit">Create/Update Details</button>
+        </form>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Update Details</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Update Hospital Details</h2>
+        <!-- Form for updating hospital details -->
+        <form action="/update-hospital-details" method="POST">
+            <!-- Include relevant form fields for updating hospital details -->
+            <label for="hospitalName">Hospital Name:</label>
+            <input type="text" id="hospitalName" name="hospitalName" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            <button type="submit">Update Details</button>
+        </form>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking - Update Location</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Appointment Booking</h1>
+    </header>
+    <section>
+        <h2>Update Hospital Location</h2>
+        <!-- Form for updating hospital location -->
+        <form action="/update-hospital-location" method="POST">
+            <!-- Include relevant form fields for updating hospital location -->
+            <label for="newLocation">New Location:</label>
+            <input type="text" id="newLocation" name="newLocation" required>
+            <button type="submit">Update Location</button>
+        </form>
+    </section>
+</body>
+</html>
+
