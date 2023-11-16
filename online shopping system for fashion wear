@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+</head>
+<body>
+
+    <!-- Login Section -->
+    <section id="login">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search">
+        <h2>Search for Items</h2>
+        <form action="#" method="get">
+            <label for="searchInput">Search:</label>
+            <input type="text" id="searchInput" name="searchInput" required>
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Shopping Cart Section -->
+    <section id="shoppingCart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems">
+            <!-- Dynamically populate cart items here -->
+            <!-- Example item: -->
+            <!-- <li>Product Name - $20.00 <button class="removeItem">Remove</button></li> -->
+        </ul>
+
+        <button id="checkoutBtn">Checkout</button>
+    </section>
+
+    <script>
+        // Add JavaScript for dynamic actions here
+        // For example, handle form submissions, add/remove items from the cart, etc.
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+
+    <!-- Shopping Cart Section -->
+    <section id="shoppingCart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems">
+            <!-- Dynamically populate cart items here -->
+            <!-- Example item: -->
+            <!-- <li>Product Name - $20.00 <button class="editItem">Edit</button> <button class="removeItem">Remove</button></li> -->
+        </ul>
+
+        <button id="checkoutBtn">Checkout</button>
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <!-- Add form fields for user details and payment -->
+        <form action="#" method="post">
+            <!-- User details, shipping address, payment details, etc. -->
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <!-- Order Status Section -->
+    <section id="orderStatus">
+        <h2>Order Status</h2>
+        <!-- Display order status information -->
+    </section>
+
+    <!-- Order History Section -->
+    <section id="orderHistory">
+        <h2>Order History</h2>
+        <!-- Display a list of past orders -->
+    </section>
+
+    <!-- Item Details Section -->
+    <section id="itemDetails">
+        <h2>Item Details</h2>
+        <!-- Display detailed information about a selected item -->
+    </section>
+
+    <!-- Logout Section -->
+    <section id="logout">
+        <h2>Logout</h2>
+        <button id="logoutBtn">Logout</button>
+    </section>
+
+    <!-- Leave Site Section -->
+    <section id="leaveSite">
+        <h2>Leave Site</h2>
+        <!-- Add a confirmation message or button to leave the site -->
+    </section>
+
+    <script>
+        // Add JavaScript for dynamic actions here
+        // For example, handle adding, editing, and removing items from the cart,
+        // checkout, order status, order history, item details, logout, and leaving the site.
+    </script>
+
+</body>
+</html>
